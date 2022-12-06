@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de nuestra web-->
+    <title>Mi primer sitio web con css</title>
+    <!-- para comentar una linea de codigo : [CTRL] + K (Vscode queda a la espera). 
+        Después pulsa [CTRL] + C  y [CTRL] + U para descomentar -->
+     <!-- link:favicon sirve para Aaregar un icono al navegador, 
+    tiene que tener la imagen en .ico para que la pueda detectar,
+     aveces si cambias la imagen del icono queda en cache la anterior y la actual no se actualiza
+    para solucionar tienes que esperar que se vacie el cache o borrarlo tu mismo-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+    <!-- De esta forma se importa un archivo css esta es la mejor forma de hacerlo-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h2> Menu de navegacion</h2>
+    <!-- la etiqueta ul sirve para crear listas desordenadas, son muy comunes utilizarlas-->
+    <!-- Le agregamos la class menu para utilizarla en el archivo css -->
+    <ul class="menu">
+        <!-- La etiqueta li sirve para nuestro item y se colocamos una etiqueta (a)
+            le agregamos un link a nuestro item-->
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Contacto</a></li>
+
+    </ul>
+</body>
+</html>
