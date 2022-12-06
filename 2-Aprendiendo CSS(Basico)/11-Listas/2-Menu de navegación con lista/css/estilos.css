@@ -30,3 +30,8 @@
     background: #ccc;
     color: #000;
 }
+/* Utilizamos la clase  mover de nuestra etiqueta (a) para posicionarla */
+.mover{
+    position: relative;
+    left: 800px;
+}
