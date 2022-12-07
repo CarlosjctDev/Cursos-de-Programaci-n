@@ -1,0 +1,46 @@
+/* Si quieres probar estos estilos ve a index.html y en link rel="stylesheet",
+ cambia la ruta de esta forma: href="css/estilos.css" */
+a{
+    /* Tamaño de letra */
+    font-size: 20px;
+    /* Cambiar de color la letra */
+    /* color: #000; */
+    /* Quitar el subrayado  con none , por defecto viene underline */
+    text-decoration: none;
+    /* Espaciado */
+    /* padding: 10px 20px; */
+    /* Colocar margen, acepta 4 parametros, 1-arriba 2-derecha 3-abajo 4-izquierda
+    estan orden de las manecillas del reloj */
+    margin: 10px 20px 10px 0px;
+
+
+}
+/*pseudoclase son las que nos permiten aplicarle estilos a los enlaces dependiendo
+de los estado que estos tengan, los enlaces tienen 4 estados.
+1-:link, el estado natural del enlace cuando todavía nunca se ha interactuado con él.
+2-:visited, el estado en el que queda un enlace una vez ya ha sido visitado y 
+se carga de nuevo el documento web.
+3-:hover, el instante en el que el cursor se sitúa encima del enlace.
+4-:active, el instante en el que se está presionando el enlace.
+    */
+  
+a:link {
+    /* Se le puede agregar cualquier propiedad, no se utiliza mucho */
+    color: aquamarine;
+}
+a:visited{
+    /* Color a los enlaces ya visitados */
+    color: #000;
+}
+a:hover{
+    /* Esta propiedad se utiliza en cualquier etiqueta */
+    /* Decorador */
+    text-decoration: underline;
+    /* Color fondo */
+    background:#000 ;
+    /* Color de letra */
+    color: #fff;
+}    
+a:active{
+    background: #ff8000;
+}

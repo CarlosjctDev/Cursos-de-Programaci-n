@@ -1,0 +1,16 @@
+/* Lenguaje de Hojas de estilos que nos permite darle color,
+forma y tamaño a lo que son nuestras paginas web, una regla css es
+todo el conjunto de grupos para poder darle estilos a un elemento,
+la regla se compone de varias cosas se compone de un selector que nos indica 
+que vamos a modificar con body hacemos referencia a todo el documento y con 
+la propiedad de background hacemos referencia que queremos modificar de nuestro selector
+y despues tenemos el valor de background lo mejor hacerlo con codigo hexadecimal */
+
+body{
+    /* background sirve para agregar color a  todo el fondo */
+    background:#000000 ;
+    /*color sirve para agregar el color de nuestra fuente */
+    color: #fff;
+}
+
+
