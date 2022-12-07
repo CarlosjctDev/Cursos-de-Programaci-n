@@ -1,0 +1,88 @@
+/* Selector Universal */
+*{
+    /* Para tener un diseño desde 0 y poder comenzar a modificar */
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: #e6e6e6;
+}
+
+header,.main,footer {
+    /* Para manejar diseños responsive manejamos porcentajes */
+    width: 90%;
+    /* max-width es para decirle cuanto queremos que sea el tamaño maximo  */
+    max-width: 1000px;
+    /* Margen */
+    margin: 20px auto;
+}
+
+header nav {
+    background: #528fd5;
+    /* overflow  hidden sirve para dos cosas una para ocultar el contenido que sobrepasa 
+    nuestro contenedor con esta propiedad lo desaparecemos.
+    La otra es que nos limpia nuestros float left */
+    overflow: hidden;
+}
+
+header nav ul {
+    /* Para quitar los puntos a la lista (ul) */
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    /* Si no le colocamos display block solo funciona el padding de 20 px osea hacia los lados */
+    display: block;
+    /* Color de fuente */
+    color: #fff;
+    /* la propiedad none en text-decoration sirve para quitar el rayado de nuestra etiqueta a */
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    background: #75ACEC;
+}
+
+.main .articles {
+    width:68.5%;
+    /* Colocamos un margen haciendo el calculo como tenemos el 30% en el aside y el 70% en nuestro main
+    ya nos ocuparia el 100% si queremos agregarle el margen a nuestro main tenemos que restarle 
+    la cantidad de margen que queremos a nuestro main */
+    margin-right: 1.5%;
+    float: left;
+    
+}
+
+.main .articles article{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+
+}
+
+aside {
+    width:30%;
+    background: #ff8000;
+    /* Si no colocamos el float left nuestra columna de aside se desplaza hacia abajo */
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Si no colocamos box-sizing nuestra columna se baja porque le agregamos un padding y
+    sobrepasa el 100% , utilizamos la propiedad border box y se soluciona*/
+    box-sizing: border-box;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    /* clear both limpias los float left y das un salto de linea, respeta el tamaño*/
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+/* Truco para hacer que los enlaces parezcan botones */
+a{
+    /* Tamaño de letra */
+    font-size: 20px;
+    /* Cambiar de color la letra */
+    /* color: #000; */
+    /* Quitar el subrayado  con none , por defecto viene underline */
+    text-decoration: none;
+    /* Espaciado */
+    padding: 10px 20px; 
+    /* Colocar margen, acepta 4 parametros, 1-arriba 2-derecha 3-abajo 4-izquierda
+    estan orden de las manecillas del reloj */
+    margin: 10px 20px 10px 0px;
+    /* display colocar la propiedad inline-block lo que hace es de ser un elemento en linea
+    lo convierta en bloque */
+    display: inline-block;    
+    /* Color fondo */
+    background: #3BA7E1;
+    /* Color fuente  */
+    color: #fff;
+    /* Agregar sombra  los elementos */
+    box-shadow:0px 5px 0px #1D64A6 ;
+
+}
+
+a:hover{
+    /* Al pasar el mouse la sombra se hace mas pequeña */
+    box-shadow:0px 2px 0px #1D64A6 ;
+}
+a:active{
+    /* Si le damos un clic la sombra desaparece y pareciera que estamos undiendo un boton */
+    box-shadow: none;
+}

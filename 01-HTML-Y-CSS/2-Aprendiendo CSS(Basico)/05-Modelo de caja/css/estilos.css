@@ -1,0 +1,43 @@
+/* Con el modelo de caja podemos modificar tanto el ancho(width),margen externo (margin),
+    margen interno (padding), tambien los bordes (border), tambien podemos modificar
+    la visualizacion de las cajas. */
+/* Todos los elementos del sitio web son rectangulares puede modificarle la forma
+    pero en el fondo son rectangulares.
+    Algunos fondos se extienden a lo largo de todo el documento es porque estos elementos
+    son de tipo bloque,existe elementos de tipo bloque por ejemplo los div y
+    de tipo linea por ejemplo los enlace,
+    un elemento bloque por defecto tiene el 100% el espacio que pueda contener,
+    el elemento linea solo se estira hasta lo que necesita para tener espacio,
+    es importante saber esto porque a los elementos linea no le podemos dar un ancho
+    no le podemos dar un largo, para poder hacerlo tendriamos que modificarlos y hacer 
+    los elementos linea bloque que es otro tipo de elemento.
+    Solamente usaremos los elementos bloque por ahora  */
+/* h1,a,div,p {
+    background: #ff8000;
+}     */
+
+/* De esta forma modificamos el tamaño del bloque */
+div{
+    /* Se puede trabajar con porcentajes o con px */
+    width: 300px;
+    /* el height Normalmente no se utiliza se le deja por defecto que crezca conforme al contenido */
+    /* height: 200px; */
+    background: #ff8000;
+    /* Sirve para utilizar margenes en todos los lados si se coloca un solo parametro.
+    Si se colocan 2 parametros el primero representa los margenes de arriba y abajo
+    y el segundo seria para la derecha y izquierda */
+    margin:20px 50px;
+    /* Sirve para agregar un margen interno a todos sus lados, si le ponemos un height de 200
+        quiere decir que con el padding tendriamos una medida real de  260 px porque
+        sumaria 30 de arriba y 30 de abajo dependiendo cuanto le especifiquemos en el padding 
+        y en el height */
+    padding: 30px ;
+    /* Sirve para agregar un borde se hace de la siguiente forma */
+    /* solid (Agrega una linea)*/
+    /* border: 10px solid #000; */
+    /* dotted ( agrega linea punteada) */
+    border: 10px dotted #000;
+    /* display por defecto son bloques (block) pero podemos forzarlas que sean lineas con (inline o inline-block)
+        debemos colocarle un ancho */
+    display: inline-block;
+}
