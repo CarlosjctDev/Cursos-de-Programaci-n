@@ -1,0 +1,26 @@
+div{
+    background: #ccc;
+    /* Le podemos dar un ancho a nuestro contenedor para que nuestra imagen se adapte a 
+    nuestro contenedor */
+    width: 100%;
+}
+/* Si quieres trabajar con un diseño responsive tienes que trabajar con porcentajes en las imagenes */
+img{
+    /* Si ya le dimos el valor en html no respeta ese valor y toma el de css */
+    width: 300px;
+    /* La propiedad auto es para que la propiedad height sea automatica,
+    tambien puedes ponerle un valor al height y el width ponerle auto */
+    height: auto;
+    /* Para centrar la imagen se utiliza margin, debe tener un ancho la imagen y el contenedor. 
+    por defecto nuestras imagenes son inline (enlinea) pero podemos cambiarlas a block*/
+    display: block;
+    margin:auto;
+    /* border-radius sirve para redondear los bordes, si le colocas 50 % se vuelve redondo */
+    border-radius: 10px;
+    /* podemos crearle una sombra, respeta los bordes redondeados que nosotros tenemos. */
+    /* box-shadow: 5px 5px 0px #424242; */
+    /* Margen interno , si le agregamos border de esta forma creamos una especie de marco,
+    se suele usar mucho en las galerias */
+    padding: 10px;
+    border:2px solid #000
+}

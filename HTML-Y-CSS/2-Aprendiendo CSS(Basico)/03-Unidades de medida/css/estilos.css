@@ -1,0 +1,30 @@
+/* Unidades de medida es la unidad que le decimos a un elemto para que pueda obtener una medida,
+    por ejemplo le podemos decir a un h1 que tenga un  tamaño de 30 px y esos pixeles son una 
+    unidad de medida, a todos nos sirve para modificar la altura,ancho , margenes, tamaño de letra etc..
+    Existen dos tipos de unidades de medida pero solo se utiliza una, existe la absoluta y la relativas.
+    Las unidades absoluta sirven para establecer un valor fijo y que no se modifiquen para nada,
+    ejemplo: cm(centimetros),mm(milimetros),in(pulgadas).
+    Las unidades relativa son flexibles porque se adaptan a nuestro trabajo, ser pueden hacer cosas mejores 
+    con ellas. pueden ser :  px , em, rem */
+body {
+    font-size: 20px;
+}
+
+/*  utilizando la unidad de medida em, toma el valor del padre mas cercano que quiere decir,
+    que si nuestra etiqueta (p) esta encerrado en un div tomaria el valor de nuestro div 
+    por ejemplo si nuestro div tiene un font-siza de 20px nuestro 1em seria = 20px ,2em=40px
+    pero si nuestro padre es el body y no esta el div el em tomaria el valor del body,
+    tambien podemos trabajar los em en decimales .5 1.5 etc */
+
+div{
+    font-size:25px;
+    background: #000;
+    color: #fff;
+    /* width que significa ancho, en este caso como el div no esta encerrado en otra etiqueta va tomar
+        el valor del body, utilizamos este width para que el diseño sea resposive */
+    width: 50%;
+}    
+
+div p{
+    font-size: 1em;
+}
