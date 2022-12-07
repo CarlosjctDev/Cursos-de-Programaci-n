@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de nuestra web-->
+    <title>Mi primer sitio web con javascript</title>
+    <!-- para comentar una linea de codigo : [CTRL] + K (Vscode queda a la espera). 
+        Después pulsa [CTRL] + C  y [CTRL] + U para descomentar -->
+     <!-- link:favicon sirve para Aaregar un icono al navegador, 
+    tiene que tener la imagen en .ico para que la pueda detectar,
+     aveces si cambias la imagen del icono queda en cache la anterior y la actual no se actualiza
+    para solucionar tienes que esperar que se vacie el cache o borrarlo tu mismo-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+
+</head>
+<body>
+    <script>
+    //Tipos de datos
+
+    //Numerico: puede ser entero , decimal(float). En otros lenguajes especificas que tipo de dato es
+    //con javascript no. Es suficientemente inteligente para saber que tipo de dato es.
+    //Se pueden realizar operaciones dentro de nuestra variables
+    var edad= 19+2;
+
+    //String(Cadena de texto),se pueden concantenar
+    var nombre="Carlos";
+    var apellido="Castaño";
+    //De esta forma se agrega comillas (Funciona igual con comillas simples) dentro de una cadena de texto
+    var texto="Hola Mundo soy \"Carlos\" Castaño";
+    //document.write(nombre+" "+apellido+" "+texto);
+       
+    //Array(Arreglo) es un variable que puede tener muchos valores (numeros, nombres ,false, true ...)
+    var amigos =["Carlos","Castaño","Torres"];
+    //document.write(amigos[0])
+
+    //object(Objeto)
+    var objecto ={
+        color: "Black",
+        size: 12
+    } 
+
+    //Boolean(Boleano)
+    var boleano=true;
+    var boleanof=false;
+
+    //Undefined, no tienen ningun valor
+    var test;
+    //document.write(test);
+
+    //Null
+    var testnull=10;
+    //si se quiere establecer la variable a nulo se utiliza null
+    var testnull=null;
+
+    //NaN, simplemente nos indica errores como por ejemplo querer multiplicar una cadena
+    var testnan="Hola M";
+    document.write(testnan*2);
+    </script>
+
+    <!-- Esta es la forma correcta de agregar un archivo javascript (Se recomienda que se coloque al final) -->
+    <script src="js/intro.js "></script>    
+</body>
+</html>
