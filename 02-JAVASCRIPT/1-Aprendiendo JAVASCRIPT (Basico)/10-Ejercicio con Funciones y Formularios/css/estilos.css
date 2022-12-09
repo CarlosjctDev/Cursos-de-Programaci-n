@@ -1,0 +1,61 @@
+form{
+    /* Ancho */
+    width: 25%;
+    /* Borde */
+    border:1px solid #ccc;
+    /* Margen exteriores */
+    margin: 20px;
+    /* Margen interno */
+    padding: 20px;
+}
+
+label,h2{
+    /* Tamaño de texto */
+    font-size: 20px;
+    /* Los label son etiquetas linea toca convertirlas a bloque */
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    display: block;
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    width: 20%;
+    /* Posicionamos la caja */
+    position: relative;
+    /* Si le decimos left va desplazar la caja de izquierda a derecha   */
+    left: 37% ; 
+    
+    
+}
+
+/* Pseudoselector focus sirve para  editar el cuadro y cuando el usuario de clic
+    tenga la sensacion de que esta trabajando en esa area */
+input:focus{
+    border: 1px solid #1668C4;
+}
+
+button{
+    display: block;
+    text-align: center;
+    padding: 10px ;
+    margin: 5px;
+    background: #1668C4;
+    color: #fff;
+    /* No tenga borde */
+    border: none;
+    /* Posicionamos la caja */
+    position: relative;
+    /* Si le decimos left va desplazar la caja de izquierda a derecha   */
+    left: 37% ;     
+    
+}
+
+.btn:hover{
+    background: #4A88F4;
+    /* la propiedad pointer modifica que cursor se va mostrar  */
+    cursor: pointer;
+}
