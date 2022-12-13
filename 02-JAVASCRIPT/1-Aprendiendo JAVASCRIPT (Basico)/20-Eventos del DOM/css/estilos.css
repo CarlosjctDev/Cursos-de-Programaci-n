@@ -1,0 +1,12 @@
+.thumb {
+    /* Ancho */
+    width: 200px;
+    /* Para imagenes */
+    transition: 300ms all ease;
+}
+
+.grande{
+    width: 400px;
+}
+
+
