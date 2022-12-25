@@ -1,0 +1,64 @@
+h2{
+    text-align: center;
+}
+form{
+    /* Ancho */
+    max-width: 25%;
+    /* Borde */
+    border:1px solid #ccc;
+    /* Margen exteriores */
+    margin: 20px;
+    /* Margen interno */
+    padding: 20px;
+    
+}
+
+.cajan , input[type="submit"]{
+    display: block;
+    
+    
+}
+
+/* Para que no se salga nuestro input nombre de  nuestro contenedor */
+.cajan{
+    width: 100%;
+ 
+}
+
+/* espacio entre nuestros generos y terminos condiciones */
+.espacio{
+    position: relative;
+    top: 10%;
+    
+}
+
+.genLabel{
+    display: block;
+    position: relative;
+    left: 20%;
+}
+
+
+
+/* Pseudoselector focus sirve para que editar el cuadro y cuando el usuario de clic
+    tenga la sensacion de que esta trabajando en esa area */
+input:focus{
+    border: 1px solid #1668C4;
+}
+
+input[type="submit"]{
+    width: 40%;
+    /* Margen exteriores */
+    margin: 20px;
+    margin-bottom: 0;
+    background: #1668C4;
+    color: #fff;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background: #4A88F4;
+    /* la propiedad pointer modifica que cursor se va mostrar  */
+    cursor: pointer;
+}
+
