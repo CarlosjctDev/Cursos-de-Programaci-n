@@ -1,0 +1,44 @@
+/* Especifidad
+    nivel de jerarquia
+    1-!important
+    2- estilos en linea
+    3- Identificadores
+    4- clases pseudo-clases atributos
+    5-  elementos pseudo-elementos
+
+    en ese orden es lo que toma como el mas importante
+    Ejemplo:
+    clase y atributos los dos estarian al mismo nivel 
+    entonces seria por cascada, tomaria el ultimo.
+    
+    */
+
+/*important  */
+h1{
+    color:brown !important;
+}
+/* Identificador */
+#identify{
+    color:blueviolet;
+}
+/* clase */
+.color_h1{
+    color:black;
+}    
+/* Atributos */
+[hola="si"]{
+    color:aqua;
+}    
+
+/* pseudo clases */
+h1:hover{
+    color:green;
+}
+/* Elemento */
+h1{
+    color:red;
+}
+/* pseudo-elemento */
+h1::selection{
+    color:blue;
+}
