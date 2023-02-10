@@ -1,0 +1,8 @@
+/* Metodologia BEM
+    Consiste en evitar selecionar muchas clases y generar conflictos 
+    en una forma que nos permita darnos cuenta de que elemento estamos seleccionando
+    a partir de las clases nos basamos  en el nombre de la clase para saber
+    que elemento estamos selecionando */
+.contact-form__input:first-child{
+    color:red;
+}
