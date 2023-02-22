@@ -1,0 +1,42 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 120px;
+    height:120px;
+    display: block;
+    background: yellow;
+}
+
+.caja1{
+    background-color: orange;
+    
+}
+.caja2{
+    background-color: green;
+    /* Con el position relative solo importan dos propiedades
+        top y left o bottom y right */
+    position: relative;
+    top: 60px;
+    left: 20px;
+    /* z-index se utiliza para posicionar la caja por encima de la otra
+        entre mayor valor tenga aparecera mejor posicionada
+        Nota importante: si tiene una caja padre y tiene un hijo la unica  forma
+        para poner la caja hijo atras de la de padre es colocandole un
+        z-index:-1 y en la del padre el z-index no tiene que estar definida con ningun valor. */
+    z-index: 50;
+}
+
+.caja3{
+    background-color: lightblue;
+    position: relative;
+    z-index: 100;
+
+}
+
+.caja4{
+    background-color: yellow;
+}
