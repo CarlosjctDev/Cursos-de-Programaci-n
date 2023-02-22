@@ -1,0 +1,25 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 200px;
+    height:200px;
+    background: red;
+    display: inline-block;
+}
+
+.caja1{
+    border:5px solid yellow;
+    
+}
+.caja2{
+    outline:5px solid green;
+    position: relative;
+}
+
+
+/* La propiedad border ocupa lugar real de la caja
+    el outline no ocupa lugar */
