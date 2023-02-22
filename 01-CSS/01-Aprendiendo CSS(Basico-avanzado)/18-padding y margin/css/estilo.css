@@ -1,0 +1,38 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2{
+    background-color: red;
+    /*Para que las caja tome las propiedad de elemento en en linea*/
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    /*Abajo */
+    /*padding-bottom: 20px;
+    Arriba 
+    padding-top: 20px;
+     Izquierda
+    padding-left: 30px;
+    Derecha 
+    padding-right: 30px; */
+    /* Para acortar se puede manejar con paddin y se le coloca parametros
+        si se le coloca un parametro toma todos los tamaños del paddin de ese valor
+        si le damos dos parametros: toma el primer parametro al lado arriba y abajo  y
+        el segundo parametro toma el lado de izquierda y derecha
+        si le damos tres parametros:
+        1- tomaria el valor de arriba
+        2- tomaria el valor de derecha y izquierda
+        3- tomaria el valor de abajo
+        si le damos cuatro parametros: 
+        el primer parametro: arriba 
+        el segundo parametro : derecha
+        el tercer parametro: abajo
+        el cuarto parametro: izquierda ,ejemplo: */
+    /*padding:10px 20px 30px 40px */    
+}
