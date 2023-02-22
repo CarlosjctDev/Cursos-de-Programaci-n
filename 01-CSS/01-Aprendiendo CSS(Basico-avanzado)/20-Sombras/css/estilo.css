@@ -1,0 +1,34 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 30px;
+}
+
+h2{
+    background-color: red;
+    /*Para que las caja tome las propiedad de elemento en en linea*/
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    /* border:5px solid #a22; */
+    /*box-shadow nos permite darle sombra a la caja
+        1- parametro: eje x
+        2- parametro: eje y
+        3- tamaño del desenfoque de la sombra
+        4- cuanto borde va tener (generalmente se le da 0)
+        5- color
+        Si quieren mas intensidad 
+        colocan (,) y lo pegan los mismo parametros
+        y se vuelve mas intenso 
+        */
+    box-shadow:30px 20px 10px 10px #000,30px 20px 10px 10px #000 ; 
+    /*text-shadow es lo mismo pero con el texto, la diferencia es
+        que el textshadow no tiene el 4 parametro (el borde)
+        tiene el color, si quieren mas intensidad 
+        colocan (,) y lo pegan los mismo parametros
+        y se vuelve mas intenso  */
+    text-shadow: 2px 2px 7px #fff,2px 2px 7px #fff;
+}
