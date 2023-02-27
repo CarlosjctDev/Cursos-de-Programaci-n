@@ -1,0 +1,24 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Pseudo-elementos
+    ::first-line (Primera linea) , funciona en los elementos bloques
+    ::first-letter (Primera letra), funciona en los elementos bloques
+      */
+
+
+.texto{
+    padding: 20px;
+
+}
+
+.texto::first-line{
+    color: blue;
+}
+.texto::first-letter{
+    font-size: 10em;
+}
