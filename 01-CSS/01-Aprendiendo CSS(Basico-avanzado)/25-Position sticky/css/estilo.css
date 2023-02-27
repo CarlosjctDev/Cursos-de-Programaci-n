@@ -1,0 +1,13 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.caja-fixed{
+    background: red;
+    /* sticky es una mezcla de relative y fixed */
+    position: sticky;
+    top: -20px;
+
+}
