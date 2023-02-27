@@ -1,0 +1,17 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 40px;
+}
+body{
+    padding-top:100px ;
+}
+
+.caja-fixed{
+    background: red;
+    /* fixed permite crear nav o anuncios ya que queda fijo en la pantalla. */
+    position: fixed;
+    /* Para que el nav no nos tape el contenido podemos colocarle 100px en el body
+        y en el margin en la caja-fixed le colocamos -100px */
+    margin: -100px;
+}
