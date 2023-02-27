@@ -1,0 +1,45 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 40px;
+}
+
+body{
+    background: black;
+}
+/* Overflow
+    Es lo que sobra.
+    se puede utilizar overflow-x y overflow-y
+    Tenemos varias propiedades
+    El valor por defecto es visible
+    El valor auto, detecta que en caso de que el contenido
+    sobrepase la caja nos da la posibilidad que podamos
+    scroller dentro de la caja  sin que el texto se sobresalga
+    El valor scroll, sirve para que aparezca la barra de scroll
+    El valor hidden, oculta.
+      */
+
+div{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: hidden;
+}
+img{
+    width: 1000px;
+    position: relative;
+    top: 260px;
+    left: 240px;
+    outline: 2px solid blue;
+    transition: all 1.2s;
+}
+div:hover>img{
+    width: 1000px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    outline: 2px solid blue;
+}
