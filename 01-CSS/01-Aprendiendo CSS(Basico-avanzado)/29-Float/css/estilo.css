@@ -1,0 +1,21 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Float
+      */
+
+
+.cont{
+    width: 500px;
+    outline: 2px solid blue;
+
+}
+.cont img{
+    float:right;
+    width: 250px;
+    margin-right: 10px;
+}
