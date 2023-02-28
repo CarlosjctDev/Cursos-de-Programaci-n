@@ -1,0 +1,80 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Pseudo-clases
+    NO FUNCIONAN EN PSEUDOELEMENTOS
+    :hover escucha el evento cuando el mouse esta encima (Funciona en cualquier elementos div ...etc)
+    :link cambiar los estilos de los link que todavia no visitamos
+    :visited cambiar los estilos de los link que ya visitamos
+    :active cuando apretemos cambia el estilo
+    :focus se utiliza en input cuando esta enfocado ejecuta la accion
+    :lang es una funcion tienes que pasarle un parametro (el lenguaje) ejemplo: lang(en)
+    lang casi no se usa
+    */
+
+
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: slateblue;
+    transition: all 1s,border .5s;
+    border: 3px solid red;
+}
+
+.caja1:hover{
+    background: darkslateblue;
+    height: 300px;
+    width: 300px;
+    border-color: blue;
+}
+
+.pruebalink{
+    margin:30px;
+    padding: 20px;
+    display: block;
+}
+
+/* Si el enlace no esta visitado se pone en rojo */
+.pruebalink:link{
+    color: red;
+}
+
+/* Si el enlace esta visitado se pone en verde */
+.pruebalink:visited{
+    color:green;
+}
+
+
+.caja2{
+    height: 250px;
+    width: 250px;
+    background: red;
+    margin: 25px;
+}
+
+.caja2:active{
+    background-color: blue;
+}
+
+.pruebainput{
+    margin: 25px;
+    background: lightgray;
+    transition: all 1s;
+}
+.pruebainput:focus{
+background: white;
+}
+
+.caja3{
+    margin: 25px;
+}
+
+/* Para hacer el cambio debe tener el lenguaje con lang la etiqueta */
+.caja3 b:lang(en){
+    background: red;
+    padding: 20px;
+}
