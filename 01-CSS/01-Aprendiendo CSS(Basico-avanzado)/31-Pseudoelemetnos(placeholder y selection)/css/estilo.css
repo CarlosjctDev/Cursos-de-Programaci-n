@@ -1,0 +1,36 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Pseudo-elementos
+    ::placeholder sirve para cambiar el estilo de los elementos holder
+    ::selection sirve para cambiar el estilo cuando se selecciona un texto
+      */
+
+
+form{
+    margin: 100px auto;
+    padding: 100px;
+    display: block;
+    background-color: #555;
+    width: 50%;
+}
+
+input{
+    padding: 6px;
+    width: 100%;
+}
+
+/* De esta forma se selecciona el placeholder */
+input::placeholder{
+    color: red;
+    font-size: 1.4em;
+}
+
+input::selection{
+    color: green;
+    background-color: aqua;
+}
