@@ -1,0 +1,41 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Pseudo-elementos
+    Estos dos no forman parte del DOM
+    FUNCIONA EN ELEMENTOS INLINE Y EN BLOQUE
+    ::after     Hijos-cotent (necesario)-INLINE
+    ::before    Hijos-cotent (necesario)-INLINE
+      */
+
+
+form{
+    margin: 100px auto;
+    padding: 100px;
+    display: block;
+    background-color: #555;
+    width: 90%;
+    text-align: center;
+}
+
+p{
+    padding: 6px;
+    width: 100%;
+}
+
+
+p::before{
+    content: "Me suscribi";
+    color: red;
+    background-color: aqua;
+}
+
+p::after{
+    content: "Carlos";
+    color: green;
+    background-color: aqua;
+}
