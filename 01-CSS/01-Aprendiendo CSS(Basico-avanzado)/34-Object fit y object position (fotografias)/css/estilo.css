@@ -1,0 +1,44 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Object-fit: fil
+    Se aplica para mejorar resoluciones de las imagenes
+    Tiene varios valores
+    Contain: valor por defecto, hace que las resoluciones de la imagen
+        sean las mismas que se definen en el contenedor 
+    Cover: se ajusta al contenedor y recorta los demas bordes (la imagen
+        se ajusta al contenido)
+    None: usa las resoluciones originales de la imagen
+    Scale-Down toma el valor mas bajo en las resoluciones entre contain y none
+
+    Object-position
+    Le podemos dar la posicion que nosotros queramos a la imagen
+    left: se muestra la imagen del lado de la izquierda
+    right:se muestra la imagen del lado de la derecha
+    top: se muestra la imagen del lado de arriba
+    bottom: se muestra la imagen del lado de abajo
+    se le puede dar medidas px, em, rem etc
+    */
+
+
+.caja{
+    margin:25px;
+    width: 400px;
+    height:400px;
+
+}
+
+.caja img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    /* object-fit: contain; */ 
+    /* object-fit: none; */
+    /* object-fit: scale-down; */
+    object-fit: cover;
+    object-position: left;
+}
