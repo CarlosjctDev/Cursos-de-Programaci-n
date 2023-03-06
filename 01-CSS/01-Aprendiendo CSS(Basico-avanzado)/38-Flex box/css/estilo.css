@@ -1,0 +1,69 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+
+/* Flex box
+    Flex requiere de dos cosas un flex container y un flex item
+    la caja se comporta como un bloque solo cambian los elementos que estan por dentro
+    cross axis es el eje x (vertical:  | (columna) ) tambien tiene cross-star y cross-end  (arriba a abajo)
+    main axis es el eje y (horizontal: - (fila)) tambien tiene main-start y main-end (izquierda a derecha)
+    con flex box cambiamos las direcciones
+    solo tiene hijos
+   PROPIEDADES
+    flex-direction tiene:
+    row : es el valor por defecto
+    row-reverse: cambia la direcion como un espejo
+    colum: se comportan  los item como columna osea vertical
+    colum-reverse: cambia la direcion como un espejo
+    
+    flex-wrap tiene:
+    wrap: respeta los tamaños y tira hacia abajo las cajas cuando el tamaño
+        se encoje mas de lo que especificamos
+    wrap-reverse : respeta los tamaños y tira hacia arriba las cajas cuando el tamaño
+        se encoje mas de lo que especificamos   
+    
+    flex-direction y flex-wrap tienen una abreviacion que es:
+    ejemplo  flex-flow: colum- wrap;   
+    
+    Para alinear en el (MAIN-AXIS)
+    Justify-content tiene varios valores:
+    center: centra el contenido
+    space-around:
+    space-between: darle un margin automatico a todas las cajas
+    space-evenly: le da a cada una  un margen especifico para que tenga el mismo valor
+
+    Para alinear en el (CROSS-AXIS)
+    Align-items tiene varios valores:
+    stretch: es la propiedad por defecto,se despliega hacia abajo
+    center: se centra verticalmente el contenido
+    flex-end: lo pone al final
+    flex-star: se ajusta la caja flexible a su contenido
+    baseline: se usa cuando tenemos muchas cajas con wrap-reverse y queremos tirarlo para abajo
+
+
+    */
+
+.flex-container{
+    display: flex;
+    /* Sirve para cambiar la direcion */
+    flex-wrap: wrap-reverse;
+}
+.flex-item{
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    /* Se debe dar height y width */
+    height: 120px;
+    width: 120px;
+    text-align: center;
+}
+.orange{
+    background: orange;
+}
+.green{
+    background: green;
+}
+
