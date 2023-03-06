@@ -1,0 +1,50 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+
+/* Flex box
+  Propiedades de item flex (MAIN AXIS)
+    flex-grow el espacio que sobra se le asigna 
+    flex-basis tiene mas importancia que el width, medicion antes de 
+        encogerse
+    flex-shrink elegir que caja va ceder mas espacio cuando no alcance
+        el lugar disponible, cuando llegen a las medidas que se le asignan
+
+    Flex: flex-grow,flex-shrink,flex-basis (Al menos el primer parametro
+        obligatorio) 
+    
+    order: (Como el z index, pero en el eje que apunta el main axis)
+        */
+
+
+
+.flex-container{
+    display: flex;
+    height: 100vh;
+}
+.flex-item{
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    /* Se debe dar height y width */
+    min-width: 120px;
+    text-align: center;
+    height: 100px;
+    flex-grow: 1;
+    width: 300px;
+   
+}
+.orange{
+    background: orange;
+    flex-basis: 350px;
+    flex-shrink: 0;
+    order: 4;    
+}
+.green{
+    background: green;
+    
+}
+
