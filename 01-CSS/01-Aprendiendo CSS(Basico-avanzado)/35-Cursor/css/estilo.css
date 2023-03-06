@@ -1,0 +1,32 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Cursor
+    Esta sirve para cambiar el cursor del puntero
+    Tipos de cursor
+    pointer
+    row-resize
+    progress
+    copy
+    Todas los tipos de cursor en el siguiente enlace
+    https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor
+    */
+
+
+.caja{
+    margin:40px;
+    width: 400px;
+    height:400px;
+    border: 5px solid red;
+    background: pink;
+    cursor: pointer;
+
+}
+
+.caja:active{
+    cursor: copy;
+}
