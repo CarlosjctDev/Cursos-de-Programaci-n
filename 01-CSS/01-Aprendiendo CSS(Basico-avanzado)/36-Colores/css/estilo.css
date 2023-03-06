@@ -1,0 +1,41 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Colores
+    COLOR_NAME
+    HEXADECIMAL
+    se puede con 3,4,6,8 valores
+    ejemplo: 
+    1) #fff
+    -Colores por f: rojo,verde,azul
+    2) #ffff
+    -Colores por f: rojo,verde,azul y opacidad
+    3)#ffffff
+    -Colores por f: rojo,rojo,verde,verde,azul,azul
+    4)#ffffffff 
+    -Colores por f: rojo,rojo,verde,verde,azul,azul,opacidad, opacidad
+    RGB
+    rojo, verde y azul
+    comienzan en 0 hasta 255
+    Es un juego de colores, si le colocamos 0  a todo obtenemos el negro
+    si le colocamos 255 a todo es blanco
+    RGBA
+    recibe 4 parametros los 3 de arriba mas  el opacidad que es de 0 hasta 1
+    Es recomendable trabajar con hexadecimal o rgb o rgba
+    https://htmlcolorcodes.com/es/
+    */
+
+
+.caja{
+    margin:40px;
+    width: 400px;
+    height:400px;
+    border: 5px solid #f00;
+    background: #48e;
+}
+
+
