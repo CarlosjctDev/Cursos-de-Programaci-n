@@ -1,6 +1,6 @@
 # Pandas
 # pip install pandas
-# Ordenamiento
+# Busqueda por rangos
 """Ejercicios: 
     1- Obtener todos los usuarios entre las edades 40 y 50."""
 """
