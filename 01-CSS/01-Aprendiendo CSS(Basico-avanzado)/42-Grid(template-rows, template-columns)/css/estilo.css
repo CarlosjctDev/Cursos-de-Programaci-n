@@ -1,0 +1,45 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* Grid es una grilla
+    grid item es un item de los elementos que sean asignados con grid
+    grid cell  es una celda siempre van ser cuadrilateros
+    grid track (column y row) , column es columna (vertical) y row es fila (horizontales)
+        para validar cuantos track hay se suman la cantidad de columnas y filas
+    grid area son areas que seleccionamos, las areas las definimos nosotros, si son areas 
+        deberian ocupar mas de una celda de la grilla, las areas tienen que ser consecutivas
+        tanto vertical como horizontalmente, no pueden haber vertical y horizontal en un area
+    grid line (column line y row line), column line es la cantidad de lineas que tiene la columna
+        row line es la cantidad de lineas que tiene la fila
+    
+    Propiedades 
+                Grid template
+    grid-template-rows(grid container)
+        Para darle la cantidad de filas que queremos, hay muchas formas de darle las filas
+        por medida : grid-template-rows: 150px 150px 150px 
+    grid-template-columns(grid container)
+        Para darle la cantidad de columnas que queremos, hay muchas formas de darle las columnas
+        por medida : grid-template-columns: 150px 150px 1fr     
+      */
+
+
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 15px;
+}
+
+.gird-container{
+    display: grid;
+    /* Columnas */
+    /* El fr el espacio que sobra se lo asigna a esa columna */
+    grid-template-columns: 150px 150px 1fr 1fr;
+    /* Filas */
+    grid-template-rows: 150px 150px 150px;
+    border: 3px solid #000;
+}
+.gird-item{
+    border: 1px solid #000;
+}
