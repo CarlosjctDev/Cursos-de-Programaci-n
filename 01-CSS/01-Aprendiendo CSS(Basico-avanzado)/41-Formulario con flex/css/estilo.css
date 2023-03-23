@@ -1,0 +1,103 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+body {
+    background-color: #000 ;
+}
+
+.flex-container{
+    display: flex;
+    /* Centrado verticalmente */
+    align-items: center;
+    /* Para cuando se haga responsive se pueda deslizar */
+    flex-wrap: wrap;
+    background: #222;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 14px solid #000;
+    outline: 3px solid #094;
+}
+
+.form{
+    min-width: 200px;
+    flex:1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 3px solid #094;
+    background: transparent;
+    color: #fff;
+    min-width: 200px;
+}
+.form__input:focus{
+    /* linear-gradient, como primer parametro va la direccion a la que apunta
+        segundo parametro el color con el que queremos que empiece
+        tercero el color con que queremos que termine */
+    background: linear-gradient(to bottom, transparent,#222);
+    outline: none;
+    border-bottom: 3px solid #5f9;
+}
+
+.form textarea{
+    min-height: 140px;
+    /* Para que no expanda el text area */
+    resize: none;
+}
+
+.form-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    /* Establecer un minimo y un maximo para que sea responsive */
+    min-width: 300px;
+    max-width: 400px;
+    /* Colocar arriba de los input la img */
+    order: 2;
+}
+
+.form-img div{
+    padding: 10px;
+
+}
+.img-container{
+    margin: auto;
+
+}
+.img-container div{
+    background-color:#fff ;
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+.form-img img{
+    width:90%;
+    margin: auto;
+}
+.form input[type="submit"]{
+    background-color: #094;
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover {
+    background-color: #072;
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:focus{
+    background: #094 ;
+}
+
+.form input[type="submit"]:active{
+    background: #072 ;
+    background: linear-gradient(to bottom, #072,#050);
+}
