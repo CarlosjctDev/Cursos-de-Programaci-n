@@ -1,0 +1,75 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Transition
+        Es una propiedad que nos permite es realizar transiciones dentro de los elementos
+        la transicion es mostrar el progreso de algo 
+
+        transition-property: property/ies - all - none
+        transition-duration: duration/s
+        transition-delay: delay/s
+        transition-timing-function: linear | ease | ease-in | ease-in-out | step-start | step-end |
+            step(int,start|end) | initial | inherit;
+        
+        #---Shorthand
+        transition:
+      */
+
+
+.container{
+    
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    /* No es recomendable poner transition-property: all; porque consume 
+        demasiados recursos lo recomendable es especificar lo que queremos usar */
+    transition-property: left,background;
+    /* En cuanto tiempo va hacer la transicion */
+    transition-duration: 1s,3s;
+    /* Despues de cuanto tiempo va hacer la transicion  */
+    /* transition-delay: 2s ; */
+    position: relative;
+
+    margin: 20px;
+    left: 0;
+}
+
+
+.container:hover> .caja{
+    left: 80%;
+    background: #fff;
+}
+
+.caja:first-child{
+    /* Va a la misma velocidad no cambia */
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2){
+    /* valor por defecto, arranca con todo y termina  despacio */
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3){
+    /* Arranca despacio y termina con todo */
+    transition-timing-function:ease-in ;
+}
+
+.caja:nth-child(4){
+    /* Arranca fuerte un poco mas leve que ease y termina despacio pero se toma mas tiempo */
+    transition-timing-function:ease-out ;    
+}
+
+.caja:nth-child(5){
+    /* Arranca despacio acelera y termina despacio es una mezcla de la 3 y 4 */
+    transition-timing-function: ease-in-out ;
+}
