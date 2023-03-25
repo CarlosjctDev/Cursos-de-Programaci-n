@@ -1,0 +1,81 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* Grid es una grilla
+    grid item es un item de los elementos que sean asignados con grid
+    grid cell  es una celda siempre van ser cuadrilateros
+    grid track (column y row) , column es columna (vertical) y row es fila (horizontales)
+        para validar cuantos track hay se suman la cantidad de columnas y filas
+    grid area son areas que seleccionamos, las areas las definimos nosotros, si son areas 
+        deberian ocupar mas de una celda de la grilla, las areas tienen que ser consecutivas
+        tanto vertical como horizontalmente, no pueden haber vertical y horizontal en un area
+    grid line (column line y row line), column line es la cantidad de lineas que tiene la columna
+        row line es la cantidad de lineas que tiene la fila
+    
+    Propiedades 
+                Grid row y column
+    grid-row-start(grid item)
+    grid-row-end(grid item)
+    grid-column-start(grid item)
+    grid-column-end(grid item)
+    #----Abreviacion 
+    grid-row(grid item)   
+    gird-column(grid item)
+
+  
+      */
+
+
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 15px;
+}
+
+.gird-container{
+    display: grid;
+    /* Columnas */
+    /* El fr el espacio que sobra se lo asigna a esa columna */
+    /* repeat recibe dos parametros "cantidad" y "tamaño" */
+    grid-template-columns: repeat(3,150px) 1fr;
+    /* Filas */
+    grid-template-rows: repeat(4,150px);
+    border: 3px solid #000;
+    /* Short hand */
+    grid-gap:10px;
+    background-color: #333;
+}
+.gird-item{
+    border: 1px solid #000;
+    background-color: #999;
+}
+
+/* Selecionar el primer elemento
+.gird-item:first-child{
+    background-color: #900;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}*/
+
+/* Selecionar el primer elemento*/ 
+.gird-item:first-child{
+    background-color: #900;
+    /*Short hand (se recomienda usar estos shorthand)
+    con el span le indica que quieres 3 columnas */
+    grid-column: 1/ span 3;
+    /*con el span le indica que quieres 3 filas*/
+    grid-row: 1/ span 3 ;
+} 
+
+
+/* Selecionar el segundo elemento */
+.gird-item:nth-child(2){
+    background: #090;
+    /*Short hand (se recomienda usar estos shorthand)*/
+    grid-column: 3/ span 5;
+    grid-row: 1/ span 3 ;    
+}
