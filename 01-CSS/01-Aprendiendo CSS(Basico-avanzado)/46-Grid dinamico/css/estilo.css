@@ -1,0 +1,49 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Grid dinamico
+    Grid si tienes un contenido y  reduces el tamaño solo se ajusta la celda aun minimo de la palabra
+    pero se puede cambiar.
+    Estructuras dinamicas
+    minmax() recibe dos parametros:
+    mincontent
+    max-content
+
+    cantidad:
+
+    auto-fill
+    Genera mas filas
+    auto-fit
+    escala los elementos
+      */
+
+
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 15px;
+}
+
+.grid-container{
+    display: grid;
+    /* Columnas */
+    /* El fr el espacio que sobra se lo asigna a esa columna */
+    /* repeat recibe dos parametros "cantidad" y "tamaño" */
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr))  ;
+    /* Filas */
+    grid-template-rows: repeat(3,150px);
+    grid-auto-rows:1fr ;    
+    grid-auto-columns:1fr ;
+    border: 3px solid #000;
+    background-color: #333;
+    /* row para que se comporte los elementos sobrantes como columnas
+        dense para que se rellenen los campos sobrantes con otra celda */
+    grid-auto-flow: dense;
+}
+.grid-item{
+    border: 1px solid #000;
+    background-color: #999;
+}
