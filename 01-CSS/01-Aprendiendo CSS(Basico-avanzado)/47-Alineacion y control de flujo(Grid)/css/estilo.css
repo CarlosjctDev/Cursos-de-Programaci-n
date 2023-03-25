@@ -1,0 +1,130 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Alineacion y control de flujo
+    diferencia con flex:
+    la alineacion es dentro de cada celda y no alineación total
+    del flex container cada celda seria un flex container
+
+    (propiedades del grid container)
+    justify-items (horizontalmente)
+    align-items (verticalmente)
+    stretch(default) - start - center - end
+    place-items: align-items justify-items
+
+    #------Alineacion de filas y columnas
+    justify-content (horizontalmente)
+    align-content (verticalmente)
+    stretch(default) - start - center - end
+    mas las de flex:
+                    *space-arround
+                    *space-between
+                    *space-evenly
+
+    #-------Aplicado al grid ITEM
+    _align-self
+    _justify-self
+    _place-self: _align-self _justify-self
+    stretch(default) - start - center - end
+    _order (igual que en flex)
+
+      */
+
+
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 15px;
+}
+
+.grid-container{
+    display: grid;
+    /* Columnas */
+    /* El fr el espacio que sobra se lo asigna a esa columna */
+    /* repeat recibe dos parametros "cantidad" y "tamaño" */
+    /*grid-template-columns: repeat(3,minmax(120px,1fr))  ;*/
+    grid-template-columns: repeat(3,1fr)  ;
+    /* Filas */
+    grid-template-rows: repeat(3,200px);
+    grid-auto-rows:1fr ;    
+    grid-auto-columns:1fr ;
+    border: 3px solid #000;
+    background-color: #333;
+    /* row para que se comporte los elementos sobrantes como columnas
+        dense para que se rellenen los campos sobrantes con otra celda */
+    grid-auto-flow: dense;
+    /* #------Propiedades del Grid item */
+    /* justify items (horizontalmente) tiene cuatro propiedades
+        stretch: valor por defecto
+        center : centra el contenido
+        start : coloca el contenido al inicio
+        end: coloca el contenido al final */
+    justify-items:center;
+    /* align-items (verticalmente) tiene cuatro propiedades
+        stretch: valor por defecto
+        center : centra el contenido
+        start : coloca el contenido al inicio
+        end: coloca el contenido al final */
+    align-items:center;
+    /* #------ Propiedades del Grid container */
+    /*    justify-content (horizontalmente)tiene cuatro propiedades
+        stretch: valor por defecto
+        center : centra el contenido
+        start : coloca el contenido al inicio
+        end: coloca el contenido al final
+            mas las de flex:
+                    *space-arround
+                    *space-between
+                    *space-evenly */
+    /*justify-content: space-evenly;*/
+    /*align-content (verticalmente)tiene cuatro propiedades
+        stretch: valor por defecto
+        center : centra el contenido
+        start : coloca el contenido al inicio
+        end: coloca el contenido al final
+            mas las de flex:
+                    *space-arround
+                    *space-between
+                    *space-evenly */
+    /*align-content: space-evenly;*/
+}
+.grid-item{
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    /* tamaño al contenido */
+    padding: 50px;
+}
+
+.grid-item:first-child{
+    align-self: start;
+    justify-self: start;
+    background-color: red;
+}
+
+.grid-item:nth-child(3){
+    align-self: start;
+    justify-self: end;
+    background-color: red;
+}
+
+.grid-item:nth-child(5){
+    background-color: lightgreen;
+}
+.grid-item:nth-child(7){
+    /* place self es un shorthand, primer parametro alig-self
+        segundo parametro justify-self */
+    place-self: end start;
+    background-color: red;
+    /* order lo coloca de ultimo dependiento del tamaño */
+    /* order:3 */
+}
+
+.grid-item:last-child{
+    align-self: end;
+    justify-self: end;
+    background-color: red;
+}
