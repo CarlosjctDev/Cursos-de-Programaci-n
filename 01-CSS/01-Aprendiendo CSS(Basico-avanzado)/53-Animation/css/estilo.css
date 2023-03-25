@@ -1,0 +1,68 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Animaciones
+    
+    animation-name: name
+    animation-duration: duration
+    animation-delay: delay
+    animation-timing-function: (transition values)
+    animation-iteration-count: number
+    animation-fill-mode: none| forwards | backwards | both | initial | inherit;
+    animation-direction: normal | reverse | alternate | alternate-reverse
+
+    regla
+    @KeyFrames
+      */
+
+
+.container{
+    
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse ;
+    animation-duration: 1s;
+    /* Cuantas veces se va repetir la animacion, si queremos que se repeti muchas veces
+        colocamos infinite */
+    animation-iteration-count: 3;
+    /* Cambia la direccion de la animacion, normal es el valor por defecto
+        reverse : invertirse
+        alternate: es un normal y despues un reverse
+        alternate-reverse- es lo mismo que el anterior solo que empieza al reves */
+    animation-direction: normal;
+    /*  animation-fill-mode, tiene varias propiedades,
+        none : la transicion comienza y vuelve a la normalidad
+        forwards: se queda con la ultima posicion en la que estamos
+        both: arranca con la propiedad que le decimos al comienzo de la animacion
+        */
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes desplazarse {
+    0%{
+        left: 0;
+        background: #025;
+    }
+
+    50%{
+        background: red;
+    }
+    100%{
+        left: 80%;
+        background: green;
+    }
+}
+
