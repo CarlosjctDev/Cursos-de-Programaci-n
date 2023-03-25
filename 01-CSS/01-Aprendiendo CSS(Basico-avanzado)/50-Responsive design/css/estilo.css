@@ -1,0 +1,83 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Responsive design
+    Se utliza javascript
+    Es una forma de trabajo(tecnica) para adaptar todo el contenido
+    de nuestra pagina web a distintas resoluciones 
+    
+    Estructuras flexibles ( contenedores flexibles, imagenes y video flexibles)
+    Media Queries
+    Regla
+    @Media se usa en consultas de medios para aplicar diferentes estilos para diferentes
+    tipos/ dispositivos medios.
+    _ancho y alto de la ventana grafica
+    _ancho y alto del dispotivo
+    _orientacion (¿la tableta/ telefono esta en modo horizontal o vertical)
+    _resolucion
+
+    Tipos de media queries
+        all
+            Apto para todos los dispositivos.
+        print
+            Destinado a material impreso y visualizacion de documentos
+            en una pantalla en el modo vista previa de impresion
+        screen (es el mas utilizado)
+            Destinado principalmente a las pantallas
+        speech
+            Destinado a sintetizadores de voz
+    
+    Operadores AND | OR
+    orientation: landscape y portrait 
+
+    landscape (escritorio) es cuando es mas ancho que largo
+    portrait (mobile) es cuando es mas largo que ancho
+
+    Hay dos metodologias para trabajar con responsive design 
+    Mobile_first (es la mas recomendada y usada) crear una web
+        para mobile y que se adapte a resoluciones mayores (pequeño a grande)
+    Desktop_first crear una web para escritorio y irla adaptando a los distintos
+        dispositivos, (de grande a pequeño)
+      */
+
+
+
+.div-responsive {
+    background: #c95;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+    /* Si es mas de 400 px y menor que 650px realiza la siguiente accion */
+    .div-responsive{
+        background: red;
+    }
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    /* Si es mas de 650 px y menor que 800px realiza la siguiente accion */
+    .div-responsive{
+        background: green;
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    /* Si es mas de 800 px y menor que 1200px realiza la siguiente accion */
+    .div-responsive{
+        background: orange;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* Si es mas de 1200 px  realiza la siguiente accion */
+    .div-responsive{
+        background: black;
+        color: white;
+    }
+}
