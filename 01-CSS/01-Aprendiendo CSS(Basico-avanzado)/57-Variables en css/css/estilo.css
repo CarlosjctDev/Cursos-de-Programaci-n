@@ -1,0 +1,45 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Variables en css
+    la variable es un espacio en memoria
+      */
+
+/* Para utilizar variables globales utilizamos root */
+:root {
+    /* Para definir variables se pone dos guion medio */
+    --color-aleatorio:#1f0;
+
+}
+
+div{
+    padding: 30px ;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+        
+}
+
+p{
+    /* Cambiamos el valor de la variable global pero solo se puede usar
+        este color en la etiqueta p */
+    --color-aleatorio:#c20;
+    padding: 30px ;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    background: var(--color-aleatorio );
+}
+
+.container{
+    /* Para asignar la variable utilizamos var() */
+    background: var(--color-aleatorio);
+}
+
+.container-2{
+    background: #86f;
+}
