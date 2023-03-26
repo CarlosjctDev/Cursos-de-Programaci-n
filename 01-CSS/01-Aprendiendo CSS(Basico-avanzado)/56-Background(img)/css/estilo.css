@@ -1,0 +1,52 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Background
+    background-color: color
+    background-image: url()
+    background-size: x,y,auto,cover,contain
+    background-clip: border-box | padding-box | content-box
+    background-origin: origen de la foto (valores arriba)    
+    background-position:left-top-bottom-right-center ++ left -top-bottom-right-center
+    background-attachment: scroll | fixed | inherit
+
+      */
+
+
+.container{
+    
+    background: #86f;
+    border: 2px solid #f00;
+    padding: 20px 5px;
+    /* x */
+    /* width: 360px; */
+    /* y */
+    height: 360px;
+    margin: 40px 0px;
+    /* Cargar imagen */
+    background-image: url(https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8&w=1000&q=80);
+    /* Darle tamaño, recibe dos parametros (x) y (y), tambien recibe de parametro cover (que seria la manera optima)
+        recibe contain ( pero se repite la imagen) */
+    /* background-size: 100% 360px; */
+    background-size: cover;
+    /* Para que no se repita y se rellena el espacio con el color de fondo que definimos */
+    background-repeat: no-repeat;
+    /* bacground-clip(recorta la imagen) tiene varios valores  border-box | padding-box | content-box 
+        se coloca desde donde queremos ver la imagen, border-box es el valor por defecto*/
+    /* background-clip: border-box; */
+    /* background-origin(crea la imagen apartir desde donde se le asigna) */
+        background-clip: content-box;
+    /* background-position , posicion en la que queremos la imagen 
+        primer parametro horizontal y segundo vertical*/
+        /* background-size: 100px; */
+        background-position: bottom center;
+    /* background-attachment, el valor scroll toma como referencia el contenedor
+        el fixed toma como referencia el vh */
+        background-attachment: fixed;
+        width: 100%;
+}
+
