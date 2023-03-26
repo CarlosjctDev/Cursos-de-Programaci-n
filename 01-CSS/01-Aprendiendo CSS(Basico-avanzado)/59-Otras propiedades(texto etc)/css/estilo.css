@@ -1,0 +1,44 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    /* Para que el scrool baje lento */
+    scroll-behavior: smooth;    
+}
+
+/* 
+                Otras propiedades
+    Direction: ltr | rtl | initial | inherit;
+    Letter Spacing:
+    scroll-behavior
+    user-selected
+    text-shadow
+
+
+    Selectores: https://www.w3schools.com/cssref/css_selectors.asp
+      */
+
+
+
+
+.container{
+    padding: 20px;
+    background: #59f;
+    font-size: 20px;
+    color: blanchedalmond;
+    /* Justificado a izquierda
+        defecto 
+        direction:ltr;
+
+        justificado a la derecha    
+        derecha : rtl */
+    direction:rtl;
+    /* Para hacer una separacion entre letras se utiliza */
+    letter-spacing: 20px;
+
+}
+
+#content{
+    background: red;
+    /* Para que el usuario no pueda seleccionar osea que no podra copiar, buscar en google etc */
+    user-select: none;
+}
