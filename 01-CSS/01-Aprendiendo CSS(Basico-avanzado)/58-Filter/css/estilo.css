@@ -1,0 +1,68 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Filter(filtros)
+        sirve para hacer:
+        Editor de imagenes (basico)
+            desenfocar
+            aumentar el brillo
+            el contranste
+            darle sombra a una imagen transparente
+            rotar la gama de colores
+            invertir los colores en porcentaje
+            cambiar la opacidad
+            saturar el elemento
+            hacerlo sepia
+            crear un filtro en svg
+        
+    none                            propiedad que viene por defecto
+    blur(px)                        desenfoca (no se puede aplicar porcentajes)
+    brightness(0-1)                 brillo  recibe de parametros numeros
+    contranst(number or %)          contraste recibe de parametros numeros o porcentajes
+    drop-shadow(medidas)            darle sombra a la imagen, recibe  4 parametros 
+    grayscale(%)                    el valor por defecto es 1, solo acepta 0 y 1, es para darle gris a la img,
+                                        tambien recibe valores en porcentaje y decimales
+    hue-rotate(deg)                 para invertir los colores se manejan en grados
+    invert(%)                       Invierte los colores se maneja en porcentaje
+    opacity(%)                      Es la opacidad se maneja con numeros y porcentajes, 1 es para que se vea todo
+                                        que es su valor por defecto
+    saturate(%)                     Satura el color
+    sepia(%)                        Te vuelve a el color sepia si colocas 1 
+    url("filters.svg#filter-id");
+        
+      */
+
+
+
+
+.container{
+    filter: contrast(30);
+    background-color: #fff;
+}
+
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: rgb(9, 179, 231);
+    margin: 40px;
+    border-radius: 50% ;
+    filter: blur(20px);
+}
+.caja:first-child{
+    animation: trasladar 3s alternate infinite;
+}
+
+@keyframes trasladar {
+    0% {
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+    }
+}
+
