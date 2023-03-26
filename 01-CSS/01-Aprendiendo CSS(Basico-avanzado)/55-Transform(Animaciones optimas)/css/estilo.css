@@ -1,0 +1,56 @@
+*{
+    font-family: 'arial';
+    font-weight: 100;
+    
+}
+
+/* 
+                Transform
+    Transforma el elemento de varias formas
+    transform: translateX(x) - translateY(y) translate(x-x,y) (si usamos porcentajes, son porcentajes
+        relativos al elemento) recomendado para animar
+    transform: scale (xy - x,y) - scaleX(x) - scaleY(y)
+    transform: rotate(angleUnit) - rotateX(angleUnit) - rotateZ (angleUnit) || angleUnit = deg - grad -rad - turn
+    transform:skew (angleUnit)
+
+    https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+
+    se puede utilizar clip-pat generator se busca en google para generar formas poco comunes
+      */
+
+
+.container{
+    
+    background: #86f;
+    padding: 20px 5px;
+}
+
+.caja{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+    /* translateX() lo translada de forma horizontal(-) en el eje x */
+    /* transform: translateX(80px); */
+    /* la propiedad translate es un shorthand que recibe dos parametros el eje (x) y el (y)
+        si se le da porcentajes tomaria el valor de el width y height dependiendo de  cuanto se le de.
+        scale() toma por defecto el valor width y height y si se le asigna 1 de parametro tomaria ese mismo tamaño 
+        tambien existe scaleX() para aumentar el tamaño en x  y scaleY() para aumentar el tamaño en y*/
+    /* transform: translate(80px,80px)scale(2); */
+    transition: transform 1s;
+}
+
+.caja:hover{
+    /* skew() transforma el elemento en un angulo de 360 grados  para que gire */
+    transform: translate(80px,80px)scale(2) skew(30deg);
+    /* translate es lo mejor para animar, no consume mucho recursos */
+}
+
+b {
+    margin: auto;
+    /* Se coloca el valor skew en negativo para que no se deforme la palabra */
+    transform: skew(-30deg);
+}
