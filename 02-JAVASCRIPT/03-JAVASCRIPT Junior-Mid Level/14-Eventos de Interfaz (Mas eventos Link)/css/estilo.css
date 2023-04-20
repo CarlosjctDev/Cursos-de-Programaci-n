@@ -1,0 +1,13 @@
+body{
+    color: #222;
+    font-family: sans-serif;   
+}
+
+
+.seleccionado{
+    color: #777;
+}
+
+.seleccionado b {
+    color: #0A0;
+}
