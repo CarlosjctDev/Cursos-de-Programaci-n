@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+    
+}
+
+#getName,#getAge{
+    font-size: 40px;
+    margin: 20px;
+}
+
+
+.name,.age{
+    background: #000;
+    color:#fff;
+    font-size: 32px;
+    margin:5px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.name{
+    background: #b00;
+}
