@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+.zona-arrastre {
+    padding: 60px;
+    border: 4px dashed #888;
+    max-width: 500px;
+    color: #888;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultado{
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 400px;
+    margin: auto;
+}
+
