@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.texturas {
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.texturas div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border: 1px solid #000;
+    user-select: all;
+}
+
+.texturas div:active {
+    opacity: 0.6;
+}
+
+.textura1 {
+    background:url("../Imagenes/textura1.jpg") ;
+}
+.textura2 {
+    background:url("../Imagenes/textura2.jpg") ;
+}
+.textura3 {
+    background:url("../Imagenes/textura3.jpg") ;
+}
+
+.zona {
+    margin: 10px;
+    background: #ddd;
+    height: 200px;
+}
